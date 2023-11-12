@@ -1,0 +1,148 @@
+Installer Glide via npm ou yarn :
+bash
+
+Copy code
+
+npm install @glidejs/glide
+
+ou
+
+bash
+
+Copy code
+
+yarn add @glidejs/glide
+
+Importer Glide dans votre fichier index.js de votre composant Slider :
+javascript
+
+Copy code
+
+import React from ‘react’;
+
+import Glide from ‘@glidejs/glide’; // Ajoutez cette ligne
+
+// …
+
+Créer une référence vers le div qui contient la classe “glide” :
+javascript
+
+Copy code
+
+import React, { useRef } from ‘react’; // Ajoutez useRef
+
+import Glide from ‘@glidejs/glide’;
+
+// …
+
+function Slider() {
+
+const glideRef = useRef(null); // Créez une référence
+
+return (
+
+<section className=“carousel section-carrousel”>
+
+<div id=“carousel-box” className=“glide” ref={glideRef}> // Ajoutez la référence
+
+// …
+
+</div>
+
+</section>
+
+);
+
+}
+
+Utiliser un effet pour initialiser Glide avec la référence et les options souhaitées :
+javascript
+
+Copy code
+
+import React, { useRef, useEffect } from ‘react’; // Ajoutez useEffect
+
+import Glide from ‘@glidejs/glide’;
+
+// …
+
+function Slider() {
+
+const glideRef = useRef(null);
+
+useEffect(() => {
+
+// Créez une nouvelle instance de Glide avec la référence et les options
+
+const glide = new Glide(glideRef.current, {
+
+type: “carousel”,
+
+startAt: 0,
+
+perView: 1,
+
+autoplay: 1200,
+
+hoverpause: true,
+
+animationDuration: 1000,
+
+gap: 8,
+
+});
+
+// Montez l’instance de Glide
+
+glide.mount();
+
+}, []); // Exécutez l’effet une seule fois au montage du composant
+
+return (
+
+<section className=“carousel section-carrousel”>
+
+<div id=“carousel-box” className=“glide” ref={glideRef}>
+
+// …
+
+</div>
+
+</section>
+
+);
+
+}
+
+Supprimer le script de Glide du code HTML, car il n’est plus nécessaire :
+html
+
+Copy code
+
+<!-- Supprimez ces lignes -->
+
+<script src=“https://cdn.jsdelivr.net/npm/@glidejs/glide”></script>
+
+<script>
+
+new Glide(“.glide”, {
+
+type: “carousel”,
+
+startAt: 0,
+
+perView: 1,
+
+autoplay: 1200,
+
+hoverpause: true,
+
+animationDuration: 1000,
+
+gap: 8,
+
+}).mount();
+
+</script>
+
+Voilà, vous avez intégré Glide dans votre composant Slider. Vous pouvez maintenant profiter de ses fonctionnalités et le personnaliser selon vos besoins. J’espère que cela vous a été utile. 😊
