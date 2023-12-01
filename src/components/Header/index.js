@@ -3,6 +3,7 @@ import React from "react";
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // CSS
 import "./Header.css";
 // IMAGES
@@ -18,12 +19,18 @@ function Header() {
       <section className="first-header">
         <div className="first-header-left">
           <div className="social-div">
-            <img
-              className="social-icon-header"
-              id="facebook-icon-header"
-              src={facebookIcon}
-              alt="logo facebook"
-            />
+            <a
+              href="https://www.facebook.com/lamaisonpercheefrance"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="social-icon-header"
+                id="facebook-icon-header"
+                src={facebookIcon}
+                alt="logo facebook"
+              />
+            </a>
             <a
               href="http://www.instagram.com/waxandsea/"
               target="_blank"
@@ -36,6 +43,9 @@ function Header() {
                 alt="logo instagram"
               />
             </a>
+              <Link to="/contact">
+                <FontAwesomeIcon className="logo-enveloppe" icon={faEnvelope} />
+              </Link> 
           </div>
         </div>
 
@@ -45,7 +55,7 @@ function Header() {
               <div className="header-logo-links-left">
                 <li id="nav-accueil">Accueil</li>
                 <li id="nav-boutique">
-                  <a href="/#">Boutique</a>
+                  <Link to="/accueil">Accueil</Link>
                 </li>
               </div>
               <li>
@@ -59,9 +69,6 @@ function Header() {
                 <li id="nav-li-contact">
                   <Link to="/connexion">Connexion</Link>
                 </li>
-                <li>
-                  <Link to="/panier">Panier</Link>
-                </li>
               </div>
             </ul>
           </nav>
@@ -70,7 +77,13 @@ function Header() {
         <div className="first-header-right">
           <FontAwesomeIcon className="logo-panier" icon={faShoppingCart} />
           <p>
-            <a href="/#">Panier</a>
+            <Link to="/panier">Panier</Link>
+          </p>
+          <p>
+            <Link to="/paiement">Paiement</Link>
+          </p>
+          <p>
+            <Link to="/enregistrement">M'enregistrer</Link>
           </p>
         </div>
       </section>

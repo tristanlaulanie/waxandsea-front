@@ -42,6 +42,12 @@ header {
     width: 2.5em;
 }
 
+.logo-enveloppe {
+    color: whitesmoke;
+    font-size: 2.5em;
+    margin-left: 0.5em;
+}
+
 .first-header-center {
     position: relative;
     left: 12vw;
@@ -109,10 +115,11 @@ header {
 
 .first-header-right p {
     color: whitesmoke;
+    margin-left: 2em;
 } 
 
 .first-header-right p a {
-    color: red;
+    color: whitesmoke;
     text-decoration: none;
 } 
 

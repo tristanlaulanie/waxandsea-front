@@ -69,11 +69,11 @@ function Slider() {
           </ul>
         </div>
         <div className="glide__arrows" data-glide-el="controls">
-          <button className="glide__arrow glide__arrow--left" data-glide-dir="<">
-            prev
+          <button id="side-arrow" className="glide__arrow glide__arrow--left" data-glide-dir="<">
+          &lt; Prev
           </button>
-          <button className="glide__arrow glide__arrow--right" data-glide-dir=">">
-            next
+          <button id="side-arrow" className="glide__arrow glide__arrow--right" data-glide-dir=">">
+            Next &gt;
           </button>
         </div>
       </div>

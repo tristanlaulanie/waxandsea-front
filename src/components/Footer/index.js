@@ -5,8 +5,9 @@ import "./Footer.css";
 // IMAGE
 import facebook from "./image/facebook-icon.png";
 // FONTAWESOME
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -15,7 +16,9 @@ function Footer() {
         <li id="policie-link">Politique de confidentialité</li>
         <li>Conditions générales de vente</li>
         <li id="legal-mentions">Mentions légales</li>
-        <li id="contact-link">Contact</li>
+        <li>
+          <Link id="contact-link" to="/contact">Contact</Link>
+        </li>
       </ul>
       <ul class="dev-policies-footer">
         <li id="copyright">(c) 2023</li>
@@ -24,12 +27,20 @@ function Footer() {
       </ul>
       <ul>
         <li class="social-networks-footer">
-        <FontAwesomeIcon className="logo-insta-footer" icon={faInstagram} />
-          <img
-            id="facebook-logo-footer"
-            src={facebook}
-            alt="logo facebook"
-          />
+          <a
+            href="https://www.instagram.com/waxandsea/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon className="logo-insta-footer" icon={faInstagram} />
+          </a>
+          <a
+            href="https://www.facebook.com/lamaisonpercheefrance"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img id="facebook-logo-footer" src={facebook} alt="logo facebook" />
+          </a>
         </li>
       </ul>
     </footer>

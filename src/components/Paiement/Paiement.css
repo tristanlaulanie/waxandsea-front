@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Paiement {
+    margin-top: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 50vh;
+}
+
+h2 {
+    margin-bottom: 5vh;
+    text-align: left;
+    font-size: 2.1em;
+    font-family: 'Amatic SC', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+
+h3 {
+    margin-bottom: 5vh;
+    text-align: left;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+}
+
+#paiement_icon_check {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#paiement-card {
+    width: 49vw;
+    min-height: 56vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 3em;
+}
+
+#paiement_radio {
+    width: 2em;
+}
+
+#paiement_icon {
+    width: 12vw;
+    height: 12vh;
+    margin-right: 1vw;
+    color: RGB(99, 91, 255);
+}
+
+#paiement_infos {
+    text-align: left;
+}
+
+#paiement_infos h4 {
+    font-size: 1.2em;
+}
+
+#paiement_infos h3 {
+    margin-bottom: 15px;
+}
+
+#paiement_infos input {
+    height: 6vh;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+#cardnumber_input {
+    width: 25.1vw;
+
+}
+
+#cardholder_input {
+    width: 25vw;
+}
+
+#paiement_date,
+#paiement_code {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#paiement_code_input {
+    width: 12.3vw;
+}
+
+#paiement_date_code {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    font-size: 1.1em;
+}
+
+.paypal_card {
+    padding: 80px 160px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#paypal_radio {
+    transform: scale(2);
+}
+
+#paypal_card_icon {
+    width: 12vw;
+    height: 12vh;
+    margin-right: 1vw;
+    color: RGB(0, 48, 135);
+}
+
+#command_details {
+    position: relative;
+    bottom: 0.8em;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+}
+
+#montant_total_achats {
+    display: flex;
+    flex-direction: row;
+    gap: 3.7em;
+}
+
+#frais_achat {
+    display: flex;
+    flex-direction: row;
+    gap: 5.7em;
+    padding-bottom: 0.7em;
+}
+
+#frais_offer {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#total_achats {
+    display: flex;
+    flex-direction: row;
+    gap: 9em;
+    padding-top: 0.7em;
+}
+
+#tva {
+    display: flex;
+    flex-direction: row;
+    gap: 9.8em;
+}
+
+#tva strong {
+    position: relative;
+    left: 12px;
+}
+
+#cgv {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    position: relative;
+    left: 8px;
+}
+
+#cgv input {
+    margin-right: 1.5em;
+    transform: scale(1.5);
+}
+
+#submit_command {
+    color: white;
+    background-color: black;
+    width: 6em;
+    height: 3em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+#submit_command:hover {
+    background-color: rgb(70, 204, 40);
+    color: black;
+}
+
+.error-message_paiement {
+    color: red;
+    font-size: 1.5em;
+    position: relative;
+    bottom: 10px;
+}
+
+.error-message_expiry {
+    color: red;
+    font-size: 1em;
+    position: relative;
+    bottom: 10px;
+}
