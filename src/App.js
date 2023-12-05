@@ -19,6 +19,8 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
+          <Route path="" element={<Accueil />} />
+          <Route path="/" element={<Accueil />} />
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/connexion" element={<Connexion />} />
           <Route path="/panier" element={<Panier />} />
