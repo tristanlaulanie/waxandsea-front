@@ -54,7 +54,7 @@ function Contact() {
             name="user_message"
             placeholder="Votre message"
             rows="8"
-            cols="125"
+            cols="88"
           ></textarea>
         </div>
         <div className="contact_buttons">

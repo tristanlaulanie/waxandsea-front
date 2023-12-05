@@ -43,9 +43,9 @@ function Header() {
                 alt="logo instagram"
               />
             </a>
-              <Link to="/contact">
-                <FontAwesomeIcon className="logo-enveloppe" icon={faEnvelope} />
-              </Link> 
+            <Link to="/contact">
+              <FontAwesomeIcon className="logo-enveloppe" icon={faEnvelope} />
+            </Link>
           </div>
         </div>
 
@@ -53,9 +53,13 @@ function Header() {
           <nav>
             <ul className="header-logo-links">
               <div className="header-logo-links-left">
-                <li id="nav-accueil">Accueil</li>
                 <li id="nav-boutique">
                   <Link to="/accueil">Accueil</Link>
+                </li>
+              </div>
+              <div className="nav-connexion">
+                <li id="nav-li-connexion">
+                  <Link to="/connexion">Connexion</Link>
                 </li>
               </div>
               <li>
@@ -65,24 +69,21 @@ function Header() {
                   alt="logo de wax & sea"
                 />
               </li>
-              <div className="nav-contact-histoire">
-                <li id="nav-li-contact">
-                  <Link to="/connexion">Connexion</Link>
-                </li>
-              </div>
             </ul>
           </nav>
         </div>
 
         <div className="first-header-right">
-          <FontAwesomeIcon className="logo-panier" icon={faShoppingCart} />
-          <p>
-            <Link to="/panier">Panier</Link>
-          </p>
-          <p>
+          <span id="cart_title">
+            <FontAwesomeIcon className="logo-panier" icon={faShoppingCart} />
+            <p>
+              <Link to="/panier">Panier</Link>
+            </p>
+          </span>
+          <p id="payment_title">
             <Link to="/paiement">Paiement</Link>
           </p>
-          <p>
+          <p id="signup_title">
             <Link to="/enregistrement">M'enregistrer</Link>
           </p>
         </div>

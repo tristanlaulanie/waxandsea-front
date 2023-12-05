@@ -96,6 +96,16 @@ header {
     margin-left: 3vw;
 }
 
+.nav-connexion {
+    position: relative;
+    left: 3em;
+}
+
+#logo-waxandsea-header {
+    position: relative;
+    right: 3.5em;
+}
+
 .first-header-right {
     margin-right: 2em;
     display: flex;
@@ -106,7 +116,6 @@ header {
     font-size: 1.8em;
     position: relative;
 }
-
 
 .first-header-right i {
     color: whitesmoke;
@@ -130,4 +139,27 @@ header {
 .nav-contact-histoire {
     display: flex;
     gap: 6em;
+}
+
+#cart_title {
+    display: flex;
+    gap: 13px;
+    position: relative;
+    left: 105px;
+}
+
+#payment_title {
+    position: relative;
+    left: 100px;
+
+}
+
+#signup_title {
+    position: relative;
+    left: 80px;
+}
+
+.social-div {
+    position: relative;
+    right: 2em;
 }
